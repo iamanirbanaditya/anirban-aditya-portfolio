@@ -88,6 +88,8 @@ export default function MainSlider() {
 
   const handleTouchEnd = (e) => {
 
+    e.preventDefault();
+    
     if (isAnimating) return;
 
     touchEndY = e.changedTouches[0].screenY;
@@ -133,7 +135,8 @@ export default function MainSlider() {
 
   window.addEventListener(
     "touchend",
-    handleTouchEnd
+    handleTouchEnd,
+    { passive:false }
   );
 
   return () => {
