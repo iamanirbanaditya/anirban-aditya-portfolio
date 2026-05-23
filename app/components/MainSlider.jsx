@@ -59,13 +59,17 @@ export default function MainSlider() {
     if (e.deltaY > 0) {
 
       setCurrentSlide((prev) =>
-        prev < slides.length - 1 ? prev + 1 : prev
+        prev < slides.length - 1
+          ? prev + 1
+          : prev
       );
 
     } else {
 
       setCurrentSlide((prev) =>
-        prev > 0 ? prev - 1 : prev
+        prev > 0
+          ? prev - 1
+          : prev
       );
 
     }
@@ -76,46 +80,56 @@ export default function MainSlider() {
 
   };
 
-  // MOBILE TOUCH START
+  // TOUCH START
 
   const handleTouchStart = (e) => {
 
-    touchStartY = e.changedTouches[0].screenY;
+    touchStartY =
+      e.changedTouches[0].screenY;
 
   };
 
-  // MOBILE TOUCH END
+  // TOUCH END
 
   const handleTouchEnd = (e) => {
 
     e.preventDefault();
-    
+
     if (isAnimating) return;
 
-    touchEndY = e.changedTouches[0].screenY;
+    touchEndY =
+      e.changedTouches[0].screenY;
 
-    const difference = touchStartY - touchEndY;
+    const difference =
+      touchStartY - touchEndY;
 
-    // SWIPE UP
+    // IGNORE SMALL TOUCH
 
-    if (difference > 50) {
+    if (Math.abs(difference) < 50)
+      return;
 
-      setIsAnimating(true);
+    setIsAnimating(true);
+
+    // SWIPE UP → NEXT
+
+    if (difference > 0) {
 
       setCurrentSlide((prev) =>
-        prev < slides.length - 1 ? prev + 1 : prev
+        prev < slides.length - 1
+          ? prev + 1
+          : prev
       );
 
     }
 
-    // SWIPE DOWN
+    // SWIPE DOWN → PREVIOUS
 
-    else if (difference < -50) {
-
-      setIsAnimating(true);
+    else {
 
       setCurrentSlide((prev) =>
-        prev > 0 ? prev - 1 : prev
+        prev > 0
+          ? prev - 1
+          : prev
       );
 
     }
@@ -126,11 +140,17 @@ export default function MainSlider() {
 
   };
 
-  window.addEventListener("wheel", handleWheel);
+  // EVENTS
+
+  window.addEventListener(
+    "wheel",
+    handleWheel
+  );
 
   window.addEventListener(
     "touchstart",
-    handleTouchStart
+    handleTouchStart,
+    { passive:false }
   );
 
   window.addEventListener(
@@ -138,6 +158,8 @@ export default function MainSlider() {
     handleTouchEnd,
     { passive:false }
   );
+
+  // CLEANUP
 
   return () => {
 
