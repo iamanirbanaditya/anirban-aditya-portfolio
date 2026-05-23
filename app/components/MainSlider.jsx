@@ -45,6 +45,11 @@ export default function MainSlider() {
 
   useEffect(() => {
 
+  let touchStartY = 0;
+  let touchEndY = 0;
+
+  // DESKTOP SCROLL
+
   const handleWheel = (e) => {
 
     if (isAnimating) return;
@@ -67,14 +72,87 @@ export default function MainSlider() {
 
     setTimeout(() => {
       setIsAnimating(false);
-    }, 1400);
+    }, 1200);
+
+  };
+
+  // MOBILE TOUCH START
+
+  const handleTouchStart = (e) => {
+
+    touchStartY = e.changedTouches[0].screenY;
+
+  };
+
+  // MOBILE TOUCH END
+
+  const handleTouchEnd = (e) => {
+
+    if (isAnimating) return;
+
+    touchEndY = e.changedTouches[0].screenY;
+
+    const difference = touchStartY - touchEndY;
+
+    // SWIPE UP
+
+    if (difference > 50) {
+
+      setIsAnimating(true);
+
+      setCurrentSlide((prev) =>
+        prev < slides.length - 1 ? prev + 1 : prev
+      );
+
+    }
+
+    // SWIPE DOWN
+
+    else if (difference < -50) {
+
+      setIsAnimating(true);
+
+      setCurrentSlide((prev) =>
+        prev > 0 ? prev - 1 : prev
+      );
+
+    }
+
+    setTimeout(() => {
+      setIsAnimating(false);
+    }, 1200);
 
   };
 
   window.addEventListener("wheel", handleWheel);
 
+  window.addEventListener(
+    "touchstart",
+    handleTouchStart
+  );
+
+  window.addEventListener(
+    "touchend",
+    handleTouchEnd
+  );
+
   return () => {
-    window.removeEventListener("wheel", handleWheel);
+
+    window.removeEventListener(
+      "wheel",
+      handleWheel
+    );
+
+    window.removeEventListener(
+      "touchstart",
+      handleTouchStart
+    );
+
+    window.removeEventListener(
+      "touchend",
+      handleTouchEnd
+    );
+
   };
 
 }, [isAnimating]);

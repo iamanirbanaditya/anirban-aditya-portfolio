@@ -66,7 +66,7 @@ export default function IntroAnimation({ setEnterSite }) {
         </h1>
 
         <p className="intro-text">
-          The Minds Behind Emerging Possibilities
+          The Mind Behind Emerging Possibilities
         </p>
 
         <button
