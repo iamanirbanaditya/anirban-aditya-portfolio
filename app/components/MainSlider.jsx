@@ -46,9 +46,11 @@ export default function MainSlider() {
   useEffect(() => {
 
   let touchStartY = 0;
-  let touchEndY = 0;
 
-  // DESKTOP SCROLL
+  const slider =
+    document.querySelector(".slider-wrapper");
+
+  // DESKTOP WHEEL
 
   const handleWheel = (e) => {
 
@@ -93,24 +95,22 @@ export default function MainSlider() {
 
   const handleTouchEnd = (e) => {
 
-    e.preventDefault();
-
     if (isAnimating) return;
 
-    touchEndY =
+    const touchEndY =
       e.changedTouches[0].screenY;
 
     const difference =
       touchStartY - touchEndY;
 
-    // IGNORE SMALL TOUCH
+    // IGNORE SMALL SWIPES
 
     if (Math.abs(difference) < 50)
       return;
 
     setIsAnimating(true);
 
-    // SWIPE UP → NEXT
+    // NEXT
 
     if (difference > 0) {
 
@@ -122,7 +122,7 @@ export default function MainSlider() {
 
     }
 
-    // SWIPE DOWN → PREVIOUS
+    // PREVIOUS
 
     else {
 
@@ -147,16 +147,14 @@ export default function MainSlider() {
     handleWheel
   );
 
-  window.addEventListener(
+  slider?.addEventListener(
     "touchstart",
-    handleTouchStart,
-    { passive:false }
+    handleTouchStart
   );
 
-  window.addEventListener(
+  slider?.addEventListener(
     "touchend",
-    handleTouchEnd,
-    { passive:false }
+    handleTouchEnd
   );
 
   // CLEANUP
@@ -168,12 +166,12 @@ export default function MainSlider() {
       handleWheel
     );
 
-    window.removeEventListener(
+    slider?.removeEventListener(
       "touchstart",
       handleTouchStart
     );
 
-    window.removeEventListener(
+    slider?.removeEventListener(
       "touchend",
       handleTouchEnd
     );
