@@ -192,7 +192,7 @@ export default function MainSlider() {
 
           initial={{
             opacity:0,
-            scale:1.08
+            scale:1
           }}
 
           animate={{
@@ -202,12 +202,12 @@ export default function MainSlider() {
 
           exit={{
             opacity:0,
-            scale:1.03
+            scale:1.18
           }}
 
           transition={{
-            duration:1.2,
-            ease:[0.77,0,0.18,1]
+            duration:1.6,
+            ease:[0.22,1,0.36,1]
           }}
         >
 
