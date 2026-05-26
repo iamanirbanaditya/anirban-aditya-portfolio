@@ -61,7 +61,7 @@ size:"large"
 year:"2014",
 title:"Loss & Leadership",
 text:"A defining emotional turning point alongside taking over as Chairman.",
-image:"/images/tl7.jpeg",
+image:"/images/tl7.png",
 size:"featured"
 },
 
