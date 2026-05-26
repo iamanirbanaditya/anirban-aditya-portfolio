@@ -77,151 +77,6 @@ return(
   </section>
 
 
-
-  {/* CONTACT STRIP */}
-
-<section className="contact-strip-section">
-
-  <div className="contact-strip-grid">
-
-    {/* EMAIL */}
-
-    <a
-      href="mailto:info@adityagroupindia.org"
-      className="contact-strip-item"
-    >
-
-      <div className="strip-icon">
-        ✉
-      </div>
-
-      <div className="strip-content">
-
-        <span>Email</span>
-
-        <h3>
-          info@adityagroupindia.org
-        </h3>
-
-      </div>
-
-    </a>
-
-    {/* PHONE */}
-
-    <a
-      href="#"
-      className="contact-strip-item"
-    >
-
-      <div className="strip-icon">
-        ☎
-      </div>
-
-      <div className="strip-content">
-
-        <span>Phone</span>
-
-        <h3>
-          WhatsApp Integrated
-        </h3>
-
-      </div>
-
-    </a>
-
-    {/* WEBSITE */}
-
-    <a
-      href="https://adityagroupindia.org"
-      target="_blank"
-      className="contact-strip-item"
-    >
-
-      <div className="strip-icon">
-        ◉
-      </div>
-
-      <div className="strip-content">
-
-        <span>Website</span>
-
-        <h3>
-          adityagroupindia.org
-        </h3>
-
-      </div>
-
-    </a>
-
-    {/* LINKEDIN */}
-
-    <a
-      href="http://linkedin.com/in/anirban-aditya-9265072b"
-      target="_blank"
-      className="contact-strip-item"
-    >
-
-      <div className="strip-icon">
-        in
-      </div>
-
-      <div className="strip-content">
-
-        <span>LinkedIn</span>
-
-        <h3>
-          Executive Leadership Profile
-        </h3>
-
-      </div>
-
-    </a>
-
-    {/* ADDRESS */}
-
-    <div className="contact-strip-item">
-
-      <div className="strip-icon">
-        ⌖
-      </div>
-
-      <div className="strip-content">
-
-        <span>Office Address</span>
-
-        <h3>
-          South Dumdum, West Bengal
-        </h3>
-
-      </div>
-
-    </div>
-
-    {/* EXECUTIVE OFFICE */}
-
-    <div className="contact-strip-item">
-
-      <div className="strip-icon">
-        ✦
-      </div>
-
-      <div className="strip-content">
-
-        <span>Executive Office</span>
-
-        <h3>
-          Chairman’s Office, Aditya Group
-        </h3>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
 {/* BUSINESS FORM */}
 
 <section className="business-form-section">
@@ -318,6 +173,142 @@ return(
     </button>
 
   </form>
+
+</section>
+
+{/* MAP SECTION */}
+
+<section className="map-section">
+
+  <div className="map-heading">
+
+    <p>
+      LOCATION
+    </p>
+
+    <h2>
+      Visit The
+      Executive Office
+    </h2>
+
+  </div>
+
+  {/* MAP */}
+
+  <div className="map-wrapper">
+
+    <iframe
+      src="https://www.google.com/maps?q=22.615611,88.411861&z=16&output=embed"
+      allowFullScreen=""
+      loading="lazy"
+      referrerPolicy="no-referrer-when-downgrade"
+    ></iframe>
+
+    {/* FLOATING CARD */}
+
+    <div className="map-card">
+
+      <h3>
+        Aditya Group
+      </h3>
+
+      <p>
+        JC86+6PQ Vivekananda Abasan,
+        Amarpalli,
+        South Dumdum,
+        West Bengal
+      </p>
+
+      <a
+        href="https://maps.google.com/?q=22.615611,88.411861"
+        target="_blank"
+        className="direction-btn"
+      >
+        Get Directions
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+{/* FLOATING SOCIALS */}
+
+<section className="floating-social-section">
+
+  <div className="social-heading">
+
+    <h2>
+      Stay Connected
+    </h2>
+
+  </div>
+
+  <div className="floating-socials">
+
+    {/* EMAIL */}
+
+    <a
+      href="mailto:info@adityagroupindia.org"
+      target="_blank"
+      className="social-float email-icon"
+    >
+      ✉
+    </a>
+
+    {/* WEBSITE */}
+
+    <a
+      href="https://adityagroupindia.org"
+      target="_blank"
+      className="social-float website-icon"
+    >
+      ⌘
+    </a>
+
+    {/* LINKEDIN */}
+
+    <a
+      href="http://linkedin.com/in/anirban-aditya-9265072b"
+      target="_blank"
+      className="social-float linkedin-icon"
+    >
+      in
+    </a>
+
+    {/* FACEBOOK */}
+
+    <a
+      href="https://www.facebook.com/anirbanadityaAG/"
+      target="_blank"
+      className="social-float facebook-icon"
+    >
+      f
+    </a>
+
+    {/* INSTAGRAM */}
+
+    <a
+      href="https://www.instagram.com/anirbanaditya/"
+      target="_blank"
+      className="social-float instagram-icon"
+    >
+      ◎
+    </a>
+
+    {/* TWITTER */}
+
+    <a
+      href="https://x.com/AnirbanAditya1"
+      target="_blank"
+      className="social-float twitter-icon"
+    >
+      𝕏
+    </a>
+
+  </div>
 
 </section>
 
