@@ -13,7 +13,7 @@ const timelineItems = [
 year:"1988",
 title:"The Beginning",
 text:"A journey rooted in values, family, and purpose.",
-image:"/images/tl1.jpg",
+image:"/images/tl1.png",
 size:"small"
 },
 
@@ -27,16 +27,16 @@ size:"small"
 
 {
 year:"2006",
-title:"Schooling Complete",
+title:"Schooling",
 text:"A milestone marking discipline and ambition.",
 image:"/images/tl3.jpeg",
-size:"large"
+size:"small"
 },
 
 {
 year:"2009",
-title:"B.Com Graduation",
-text:"Graduated from the University of Calcutta.",
+title:"Graduation",
+text:"B.Com Graduated from the University of Calcutta.",
 image:"/images/tl4.jpeg",
 size:"small"
 },
@@ -51,18 +51,18 @@ size:"small"
 
 {
 year:"2012",
-title:"London Film Academy",
+title:"Film Academy",
 text:"Exploring cinematic storytelling and creativity in London.",
-image:"/images/tl6.jpeg",
-size:"large"
+image:"/images/tl6.png",
+size:"small"
 },
 
 {
 year:"2014",
-title:"Loss & Leadership",
+title:"Leadership",
 text:"A defining emotional turning point alongside taking over as Chairman.",
 image:"/images/tl7.png",
-size:"featured"
+size:"small"
 },
 
 {
@@ -77,7 +77,7 @@ size:"small"
 year:"2018",
 title:"Baby Girl",
 text:"Welcoming joy, warmth, and deeper purpose.",
-image:"/images/tl9.jpeg",
+image:"/images/tl9.png",
 size:"small"
 },
 
@@ -85,14 +85,14 @@ size:"small"
 year:"2023",
 title:"Baby Boy",
 text:"Strengthening the meaning of legacy and future.",
-image:"/images/tl10.jpeg",
-size:"large"
+image:"/images/tl10.png",
+size:"small"
 },
 
 {
 year:"2024",
-title:"ICC National Expert Committee",
-text:"Leadership and contribution recognized nationally.",
+title:"ICC",
+text:"Appointed Chair of ICC National Expert Committee on Sports.",
 image:"/images/tl11.jpeg",
 size:"small"
 },
@@ -102,7 +102,7 @@ year:"Today",
 title:"Legacy Continues",
 text:"Living a life of contentment, prosperity, and purpose.",
 image:"/images/tl12.jpg",
-size:"featured"
+size:"small"
 }
 
 ];

@@ -1,8 +1,80 @@
 "use client";
 
 import { motion } from "framer-motion";
+import emailjs from "@emailjs/browser";
+import { useState } from "react";
 
 export default function ContactPage(){
+
+const [formData, setFormData] = useState({
+
+from_name:"",
+from_email:"",
+contact_number:"",
+company:"",
+agenda:"",
+message:""
+
+});
+
+const [loading, setLoading] = useState(false);
+
+const [success, setSuccess] = useState(false);
+
+const handleChange = (e) => {
+
+setFormData({
+
+...formData,
+[e.target.name]:e.target.value
+
+});
+
+};
+
+const handleSubmit = async (e) => {
+
+e.preventDefault();
+
+setLoading(true);
+
+try{
+
+await emailjs.send(
+
+"service_o8ywpml",
+"template_n16rr55",
+
+formData,
+
+"QICCSQntBzM3W4Hot"
+
+);
+
+setSuccess(true);
+
+setFormData({
+
+from_name:"",
+from_email:"",
+contact_number:"",
+company:"",
+agenda:"",
+message:""
+
+});
+
+}catch(error){
+
+console.log(error);
+
+alert("Something went wrong.");
+
+}
+
+setLoading(false);
+
+};
 
 return(
 
@@ -15,7 +87,7 @@ return(
     <div className="contact-overlay"></div>
 
     <motion.div
-      className="contact-content"
+      className="contact-hero-content"
 
       initial={{
         opacity:0,
@@ -110,13 +182,20 @@ return(
 
   {/* FORM */}
 
-  <form className="luxury-form">
+  <form
+  className="luxury-form"
+  onSubmit={handleSubmit}
+  >
 
     <div className="form-group">
 
       <input
-        type="text"
-        placeholder="Full Name"
+      type="text"
+      name="from_name"
+      placeholder="Full Name"
+      value={formData.from_name}
+      onChange={handleChange}
+      required
       />
 
     </div>
@@ -124,8 +203,12 @@ return(
     <div className="form-group">
 
       <input
-        type="email"
-        placeholder="Email Address"
+      type="email"
+      name="from_email"
+      placeholder="Email Address"
+      value={formData.from_email}
+      onChange={handleChange}
+      required
       />
 
     </div>
@@ -133,8 +216,11 @@ return(
     <div className="form-group">
 
       <input
-        type="text"
-        placeholder="Contact Number"
+      type="text"
+      name="contact_number"
+      placeholder="Contact Number"
+      value={formData.contact_number}
+      onChange={handleChange}
       />
 
     </div>
@@ -142,8 +228,11 @@ return(
     <div className="form-group">
 
       <input
-        type="text"
-        placeholder="Associated Company"
+      type="text"
+      name="company"
+      placeholder="Associated Company"
+      value={formData.company}
+      onChange={handleChange}
       />
 
     </div>
@@ -151,8 +240,11 @@ return(
     <div className="form-group">
 
       <input
-        type="text"
-        placeholder="Agenda"
+      type="text"
+      name="agenda"
+      placeholder="Agenda"
+      value={formData.agenda}
+      onChange={handleChange}
       />
 
     </div>
@@ -160,7 +252,11 @@ return(
     <div className="form-group full-width">
 
       <textarea
-        placeholder="Message"
+      name="message"
+      placeholder="Message"
+      value={formData.message}
+      onChange={handleChange}
+      required
       ></textarea>
 
     </div>
@@ -169,8 +265,18 @@ return(
       type="submit"
       className="form-submit-btn"
     >
-      Send Inquiry
+      {loading ? "Sending..." : "Send Inquiry"}
     </button>
+
+    {success && (
+
+    <p className="success-message">
+
+    Inquiry submitted successfully.
+
+    </p>
+
+    )}
 
   </form>
 
@@ -232,6 +338,134 @@ return(
   </div>
 
 </section>
+
+
+{/* FAQ SECTION */}
+
+<section className="faq-section">
+
+  <div className="faq-heading">
+
+    <p>
+      FAQ
+    </p>
+
+    <h2>
+      Frequently Asked
+      Questions
+    </h2>
+
+  </div>
+
+  <div className="faq-container">
+
+    {/* ITEM */}
+
+    <div className="faq-item">
+
+      <h3>
+        What type of collaborations are accepted?
+      </h3>
+
+      <p>
+        Strategic partnerships, educational initiatives,
+        leadership engagements, institutional growth,
+        innovation, and business collaborations.
+      </p>
+
+    </div>
+
+    {/* ITEM */}
+
+    <div className="faq-item">
+
+      <h3>
+        How can I schedule a business meeting?
+      </h3>
+
+      <p>
+        You can schedule directly through the WhatsApp
+        integration or submit the inquiry form above.
+      </p>
+
+    </div>
+
+    {/* ITEM */}
+
+    <div className="faq-item">
+
+      <h3>
+        Are speaking engagements and leadership events available?
+      </h3>
+
+      <p>
+        Yes. Leadership talks, institutional events,
+        educational summits, and executive discussions
+        are available upon request.
+      </p>
+
+    </div>
+
+    {/* ITEM */}
+
+    <div className="faq-item">
+
+      <h3>
+        Where is the executive office located?
+      </h3>
+
+      <p>
+        South Dumdum, West Bengal,
+        India.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+
+{/* QUOTE SECTION */}
+
+<section className="quote-section">
+
+  <div className="quote-overlay"></div>
+
+  <div className="quote-content">
+
+    <span className="quote-mark">
+      “
+    </span>
+
+    <h2>
+      Leadership is not inherited —
+      it is earned through vision,
+      action, and an unwavering
+      commitment to the people
+      you serve.
+    </h2>
+
+    <div className="quote-line"></div>
+
+    <p>
+      — Anirban Aditya
+    </p>
+
+    <span className="quote-role">
+      Chairman, Aditya Group
+    </span>
+
+  </div>
+
+</section>
+
+
+
+
+
 
 
 {/* FLOATING SOCIALS */}
@@ -311,6 +545,121 @@ return(
   </div>
 
 </section>
+
+
+
+{/* FOOTER */}
+
+<footer className="luxury-footer">
+
+  <div className="footer-grid">
+
+    {/* BRAND */}
+
+    <div className="footer-brand">
+
+      <h2>
+        Anirban Aditya
+      </h2>
+
+      <p>
+        Leadership, vision, education,
+        innovation, and purposeful impact.
+      </p>
+
+    </div>
+
+    {/* ADDRESS */}
+
+    <div className="footer-column">
+
+      <span>
+        Address
+      </span>
+
+      <p>
+        JC86+6PQ Vivekananda Abasan,
+        Amarpalli,
+        South Dumdum,
+        West Bengal
+      </p>
+
+    </div>
+
+    {/* CONTACT */}
+
+    <div className="footer-column">
+
+      <span>
+        Contact
+      </span>
+
+      <a href="mailto:info@adityagroupindia.org">
+        info@adityagroupindia.org
+      </a>
+
+      <a href="https://adityagroupindia.org">
+        adityagroupindia.org
+      </a>
+
+      <a href="033 25504429">
+        033 25504429
+      </a>
+
+    </div>
+
+    {/* SOCIALS */}
+
+    <div className="footer-column">
+
+      <span>
+        Social
+      </span>
+
+      <a
+        href="https://www.instagram.com/anirbanaditya/"
+        target="_blank"
+      >
+        Instagram
+      </a>
+
+      <a
+        href="https://www.facebook.com/anirbanadityaAG/"
+        target="_blank"
+      >
+        Facebook
+      </a>
+
+      <a
+        href="https://x.com/AnirbanAditya1"
+        target="_blank"
+      >
+        Twitter
+      </a>
+
+      <a
+        href="http://linkedin.com/in/anirban-aditya-9265072b"
+        target="_blank"
+      >
+        LinkedIn
+      </a>
+
+    </div>
+
+  </div>
+
+  {/* BOTTOM */}
+
+  <div className="footer-bottom">
+
+    <p>
+      © 2026 Anirban Aditya.
+      All Rights Reserved.
+    </p>
+
+  </div>
+
+</footer>
 
 </section>
 
