@@ -511,27 +511,47 @@ background:#a50d26;
 ===================================================== */
 
 .story-slide{
-background:
-url('/images/story-bg.png')
-center/cover no-repeat;
+background-image:
+url('/images/story-bg.png');
+
+background-size:cover;
+
+background-repeat:no-repeat;
+
+background-position:center center;
 }
 
 .ventures-slide{
-background:
-url('/images/ventures-bg.png')
-center/cover no-repeat;
+background-image:
+url('/images/ventures-bg.png');
+
+background-size:cover;
+
+background-repeat:no-repeat;
+
+background-position:center center;
 }
 
 .beyond-slide{
-background:
-url('/images/beyond-bg.png')
-center/cover no-repeat;
+background-image:
+url('/images/beyond-bg.png');
+
+background-size:cover;
+
+background-repeat:no-repeat;
+
+background-position:center center;
 }
 
 .talk-slide{
-background:
-url('/images/talk-bg.png')
-center/cover no-repeat;
+background-image:
+url('/images/talk-bg.png');
+
+background-size:cover;
+
+background-repeat:no-repeat;
+
+background-position:center center;
 }
 
 /* =====================================================
@@ -699,6 +719,22 @@ opacity:.35;
 .slide-image{
 
 border-radius:0;
+}
+
+.story-slide{
+background-position:10% center;
+}
+
+.ventures-slide{
+background-position:45% center;
+}
+
+.beyond-slide{
+background-position:50% center;
+}
+
+.talk-slide{
+background-position:10% center;
 }
 
 /* CONTENT */
