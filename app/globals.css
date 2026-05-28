@@ -6697,12 +6697,20 @@ awardsMarquee 26s linear infinite;
 /* CARD */
 
 .award-card{
-width:180px;
-height:200px;
+width:190px;
+height:280px;
 
-padding:24px;
+padding:22px 18px;
 
 border-radius:22px;
+}
+
+.award-card h3{
+font-size:14px;
+
+line-height:1.5;
+
+margin-top:18px;
 }
 
 }
@@ -6768,3 +6776,24 @@ color:#C8102E;
 transform:
 translateX(4px);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
