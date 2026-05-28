@@ -4642,3 +4642,2129 @@ line-height:1.9;
 }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =====================================================
+   VENTURES PAGE
+===================================================== */
+
+.ventures-page{
+position:relative;
+
+width:100%;
+
+background:#050505;
+
+overflow:hidden;
+}
+
+/* =====================================================
+   VENTURE SECTION
+===================================================== */
+
+.venture-section{
+display:grid;
+
+grid-template-columns:
+.95fr 1.05fr;
+
+gap:80px;
+
+align-items:center;
+
+padding:160px 8vw;
+
+position:relative;
+}
+
+/* =====================================================
+   CONTENT
+===================================================== */
+
+.venture-content{
+max-width:560px;
+}
+
+/* TAG */
+
+.venture-tag{
+font-size:12px;
+font-weight:700;
+
+letter-spacing:.42em;
+
+color:#C8102E;
+
+margin-bottom:24px;
+}
+
+/* TITLE */
+
+.venture-content h2{
+font-size:clamp(3.5rem,6vw,6rem);
+
+line-height:.92;
+
+letter-spacing:-4px;
+
+margin-bottom:30px;
+
+color:#fff;
+}
+
+/* LINE */
+
+.venture-line{
+width:110px;
+height:2px;
+
+margin-bottom:32px;
+
+background:
+linear-gradient(
+90deg,
+#C8102E,
+transparent
+);
+}
+
+/* TEXT */
+
+.venture-content p{
+font-size:17px;
+
+line-height:2;
+
+margin-bottom:26px;
+
+color:rgba(255,255,255,.72);
+}
+
+/* =====================================================
+   SCHOOLS GALLERY
+===================================================== */
+
+.schools-gallery{
+display:grid;
+
+grid-template-columns:
+1fr 1fr;
+
+gap:20px;
+}
+
+/* IMAGE */
+
+.school-img{
+position:relative;
+
+overflow:hidden;
+
+border-radius:28px;
+
+background:#0b0b0b;
+
+box-shadow:
+0 20px 50px rgba(0,0,0,.35);
+
+transition:.5s ease;
+}
+
+/* IMAGE */
+
+.school-img img{
+width:100%;
+height:100%;
+
+object-fit:cover;
+
+object-position:center;
+
+display:block;
+
+transition:.7s ease;
+}
+
+/* IMAGE POSITIONS */
+
+.school-img-1 img{
+object-position:center top;
+}
+
+.school-img-2 img{
+object-position:center center;
+}
+
+.school-img-3 img{
+object-position:center top;
+}
+
+.school-img-4 img{
+object-position:center center;
+}
+
+.school-img-5 img{
+object-position:center top;
+}
+
+/* HOVER */
+
+.school-img:hover{
+
+transform:
+translateY(-10px);
+}
+
+/* IMAGE HOVER */
+
+.school-img:hover img{
+
+transform:scale(1.06);
+}
+
+/* CREATIVE HEIGHTS */
+
+.school-img-1{
+height:260px;
+}
+
+.school-img-2{
+height:420px;
+}
+
+.school-img-3{
+height:340px;
+}
+
+.school-img-4{
+height:500px;
+}
+
+.school-img-5{
+height:280px;
+
+grid-column:
+span 2;
+}
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media(max-width:768px){
+
+.venture-section{
+
+grid-template-columns:1fr;
+
+gap:60px;
+
+padding:120px 24px;
+}
+
+/* TITLE */
+
+.venture-content h2{
+
+font-size:48px;
+
+line-height:.95;
+
+letter-spacing:-2px;
+}
+
+/* TEXT */
+
+.venture-content p{
+
+font-size:15px;
+
+line-height:1.9;
+}
+
+/* GALLERY */
+
+.schools-gallery{
+gap:14px;
+}
+
+/* IMAGE */
+
+.school-img{
+border-radius:22px;
+}
+
+/* HEIGHTS */
+
+.school-img-1{
+height:180px;
+}
+
+.school-img-2{
+height:280px;
+}
+
+.school-img-3{
+height:220px;
+}
+
+.school-img-4{
+height:320px;
+}
+
+.school-img-5{
+height:220px;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =====================================================
+   SPORTS SECTION
+===================================================== */
+
+.sports-section{
+align-items:center;
+}
+
+/* =====================================================
+   SPORTS GALLERY
+===================================================== */
+
+.sports-gallery{
+display:grid;
+
+grid-template-columns:
+1fr 1fr 1fr;
+
+gap:18px;
+}
+
+/* IMAGE */
+
+.sports-img{
+position:relative;
+
+overflow:hidden;
+
+border-radius:26px;
+
+background:#111;
+
+box-shadow:
+0 20px 50px rgba(0,0,0,.35);
+
+transition:.5s ease;
+}
+
+/* IMAGE */
+
+.sports-img img{
+width:100%;
+height:100%;
+
+object-fit:cover;
+
+display:block;
+
+transition:.7s ease;
+}
+
+/* HOVER */
+
+.sports-img:hover{
+
+transform:
+translateY(-10px);
+}
+
+/* IMAGE HOVER */
+
+.sports-img:hover img{
+
+transform:scale(1.06);
+}
+
+/* CREATIVE HEIGHTS */
+
+.sports-img-1{
+height:240px;
+}
+
+.sports-img-2{
+height:420px;
+}
+
+.sports-img-3{
+height:300px;
+}
+
+.sports-img-4{
+height:500px;
+}
+
+.sports-img-5{
+height:260px;
+}
+
+.sports-img-6{
+height:360px;
+}
+
+.sports-img-7{
+height:240px;
+
+grid-column:
+span 2;
+}
+
+/* IMAGE POSITIONS */
+
+.sports-img-1 img{
+object-position:center top;
+}
+
+.sports-img-2 img{
+object-position:center center;
+}
+
+.sports-img-3 img{
+object-position:center top;
+}
+
+.sports-img-4 img{
+object-position:center center;
+}
+
+.sports-img-5 img{
+object-position:center top;
+}
+
+.sports-img-6 img{
+object-position:center center;
+}
+
+.sports-img-7 img{
+object-position:center top;
+}
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media(max-width:768px){
+
+.sports-gallery{
+
+grid-template-columns:
+1fr 1fr;
+
+gap:14px;
+}
+
+/* HEIGHTS */
+
+.sports-img-1{
+height:180px;
+}
+
+.sports-img-2{
+height:260px;
+}
+
+.sports-img-3{
+height:220px;
+}
+
+.sports-img-4{
+height:300px;
+}
+
+.sports-img-5{
+height:180px;
+}
+
+.sports-img-6{
+height:260px;
+}
+
+.sports-img-7{
+height:200px;
+}
+
+}
+
+
+
+
+
+
+/* =====================================================
+   KREAMZ SECTION
+===================================================== */
+
+.kreamz-section{
+align-items:center;
+}
+
+/* =====================================================
+   KREAMZ GALLERY
+===================================================== */
+
+.kreamz-gallery{
+position:relative;
+
+height:820px;
+}
+
+/* =====================================================
+   MAIN HERO
+===================================================== */
+
+.kreamz-main{
+position:absolute;
+
+left:50%;
+top:50%;
+
+transform:
+translate(-50%,-50%);
+
+width:240px;
+height:360px;
+
+overflow:hidden;
+
+border-radius:38px;
+
+z-index:5;
+
+background:#111;
+
+box-shadow:
+0 35px 90px rgba(0,0,0,.45);
+
+transition:.5s ease;
+}
+
+/* IMAGE */
+
+.kreamz-main img{
+width:100%;
+height:100%;
+
+object-fit:cover;
+
+object-position:center center;
+
+display:block;
+
+transition:.8s ease;
+}
+
+/* HOVER */
+
+.kreamz-main:hover{
+
+transform:
+translate(-50%,-50%)
+translateY(-10px);
+}
+
+.kreamz-main:hover img{
+
+transform:scale(1.06);
+}
+
+/* =====================================================
+   FLOATING CARDS
+===================================================== */
+
+.kreamz-float{
+position:absolute;
+
+overflow:hidden;
+
+border-radius:28px;
+
+background:#111;
+
+box-shadow:
+0 20px 60px rgba(0,0,0,.35);
+
+transition:.5s ease;
+}
+
+/* IMAGE */
+
+.kreamz-float img{
+width:100%;
+height:100%;
+
+object-fit:cover;
+
+display:block;
+
+transition:.8s ease;
+}
+
+/* HOVER */
+
+.kreamz-float:hover{
+
+transform:
+translateY(-10px)
+rotate(-1deg);
+}
+
+/* IMAGE HOVER */
+
+.kreamz-float:hover img{
+
+transform:scale(1.08);
+}
+
+/* =====================================================
+   POSITIONS
+===================================================== */
+
+.kreamz-float-1{
+top:20px;
+left:0;
+
+width:220px;
+height:260px;
+
+z-index:2;
+}
+
+.kreamz-float-2{
+top:80px;
+right:0;
+
+width:220px;
+height:280px;
+
+z-index:2;
+}
+
+.kreamz-float-3{
+bottom:60px;
+left:40px;
+
+width:230px;
+height:280px;
+
+z-index:3;
+}
+
+.kreamz-float-4{
+bottom:0;
+right:20px;
+
+width:210px;
+height:260px;
+
+z-index:2;
+}
+
+/* =====================================================
+   IMAGE POSITIONS
+===================================================== */
+
+.kreamz-float-1 img{
+object-position:center top;
+}
+
+.kreamz-float-2 img{
+object-position:center center;
+}
+
+.kreamz-float-3 img{
+object-position:center top;
+}
+
+.kreamz-float-4 img{
+object-position:center center;
+}
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media(max-width:768px){
+
+.kreamz-gallery{
+height:620px;
+}
+
+/* MAIN */
+
+.kreamz-main{
+
+width:180px;
+height:220px;
+
+border-radius:24px;
+}
+
+/* FLOATS */
+
+.kreamz-float-1{
+width:210px;
+height:140px;
+
+top:20px;
+}
+
+.kreamz-float-2{
+width:120px;
+height:180px;
+
+top:60px;
+}
+
+.kreamz-float-3{
+width:130px;
+height:160px;
+
+bottom:70px;
+}
+
+.kreamz-float-4{
+width:160px;
+height:130px;
+
+bottom:0;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+/* =====================================================
+   INTERIORS SECTION
+===================================================== */
+
+.interiors-section{
+align-items:center;
+}
+
+/* =====================================================
+   GALLERY
+===================================================== */
+
+.interiors-gallery{
+display:flex;
+flex-direction:column;
+
+gap:28px;
+}
+
+/* =====================================================
+   HERO IMAGE
+===================================================== */
+
+.interior-hero{
+position:relative;
+
+overflow:hidden;
+
+border-radius:40px;
+
+height:520px;
+
+background:#111;
+
+box-shadow:
+0 35px 90px rgba(0,0,0,.45);
+}
+
+/* IMAGE */
+
+.interior-hero img{
+width:100%;
+height:100%;
+
+object-fit:cover;
+
+display:block;
+
+transition:.8s ease;
+}
+
+/* HOVER */
+
+.interior-hero:hover img{
+
+transform:scale(1.05);
+}
+
+/* =====================================================
+   EDITORIAL WALL
+===================================================== */
+
+.interior-editorial-wall{
+display:grid;
+
+grid-template-columns:
+1fr 1fr;
+
+gap:22px;
+}
+
+/* COLUMN */
+
+.interior-column{
+display:flex;
+flex-direction:column;
+
+gap:22px;
+}
+
+/* =====================================================
+   CARD
+===================================================== */
+
+.interior-card{
+position:relative;
+
+overflow:hidden;
+
+border-radius:30px;
+
+background:#111;
+
+box-shadow:
+0 20px 60px rgba(0,0,0,.35);
+
+transition:.5s ease;
+}
+
+/* IMAGE */
+
+.interior-card img{
+width:100%;
+height:100%;
+
+object-fit:cover;
+
+display:block;
+
+transition:.8s ease;
+}
+
+/* HOVER */
+
+.interior-card:hover{
+
+transform:
+translateY(-8px);
+}
+
+/* IMAGE HOVER */
+
+.interior-card:hover img{
+
+transform:scale(1.06);
+}
+
+/* =====================================================
+   HEIGHTS
+===================================================== */
+
+.interior-card.tall{
+height:420px;
+}
+
+.interior-card.medium{
+height:300px;
+}
+
+.interior-card.small{
+height:220px;
+}
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media(max-width:768px){
+
+.interior-hero{
+
+height:280px;
+
+border-radius:24px;
+}
+
+/* WALL */
+
+.interior-editorial-wall{
+
+grid-template-columns:1fr;
+
+gap:16px;
+}
+
+/* COLUMN */
+
+.interior-column{
+gap:16px;
+}
+
+/* HEIGHTS */
+
+.interior-card.tall{
+height:260px;
+}
+
+.interior-card.medium{
+height:220px;
+}
+
+.interior-card.small{
+height:180px;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =====================================================
+   HOSPITALITY SECTION
+===================================================== */
+
+.hospitality-section{
+align-items:center;
+}
+
+/* =====================================================
+   BRANDS
+===================================================== */
+
+.hospitality-brands{
+display:flex;
+flex-direction:column;
+
+gap:24px;
+
+margin-top:50px;
+}
+
+/* BRAND */
+
+.hospitality-brand{
+padding-left:22px;
+
+border-left:2px solid rgba(200,16,46,.5);
+}
+
+/* TITLE */
+
+.hospitality-brand span{
+display:block;
+
+font-size:18px;
+font-weight:700;
+
+margin-bottom:10px;
+
+color:#fff;
+}
+
+/* TEXT */
+
+.hospitality-brand p{
+font-size:15px;
+
+line-height:1.9;
+
+color:rgba(255,255,255,.68);
+}
+
+/* =====================================================
+   GALLERY
+===================================================== */
+
+.hospitality-gallery{
+position:relative;
+
+height:860px;
+}
+
+/* =====================================================
+   MAIN IMAGE
+===================================================== */
+
+.hospitality-main{
+position:absolute;
+
+left:50%;
+top:50%;
+
+transform:
+translate(-50%,-50%);
+
+width:220px;
+height:360px;
+
+overflow:hidden;
+
+border-radius:36px;
+
+z-index:5;
+
+background:#111;
+
+box-shadow:
+0 35px 90px rgba(0,0,0,.45);
+}
+
+/* IMAGE */
+
+.hospitality-main img{
+width:100%;
+height:100%;
+
+object-fit:cover;
+
+display:block;
+
+transition:.8s ease;
+}
+
+/* HOVER */
+
+.hospitality-main:hover img{
+
+transform:scale(1.05);
+}
+
+/* =====================================================
+   CARDS
+===================================================== */
+
+.hospitality-card{
+position:absolute;
+
+overflow:hidden;
+
+border-radius:26px;
+
+background:#111;
+
+box-shadow:
+0 20px 60px rgba(0,0,0,.35);
+
+transition:.5s ease;
+}
+
+/* IMAGE */
+
+.hospitality-card img{
+width:100%;
+height:100%;
+
+object-fit:cover;
+
+display:block;
+
+transition:.8s ease;
+}
+
+/* HOVER */
+
+.hospitality-card:hover{
+
+transform:
+translateY(-10px);
+}
+
+/* IMAGE HOVER */
+
+.hospitality-card:hover img{
+
+transform:scale(1.08);
+}
+
+/* =====================================================
+   POSITIONS
+===================================================== */
+
+.hospitality-card-1{
+top:20px;
+left:0;
+
+width:220px;
+height:260px;
+}
+
+.hospitality-card-2{
+top:40px;
+right:0;
+
+width:240px;
+height:300px;
+}
+
+.hospitality-card-3{
+bottom:220px;
+left:40px;
+
+width:230px;
+height:260px;
+}
+
+.hospitality-card-4{
+bottom:120px;
+right:20px;
+
+width:220px;
+height:240px;
+}
+
+.hospitality-card-5{
+bottom:0;
+left:50%;
+
+transform:
+translateX(-50%);
+
+width:260px;
+height:180px;
+}
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media(max-width:768px){
+
+/* =====================================================
+   SECTION
+===================================================== */
+
+.hospitality-section{
+gap:70px;
+}
+
+/* =====================================================
+   BRANDS
+===================================================== */
+
+.hospitality-brands{
+gap:18px;
+
+margin-top:36px;
+}
+
+/* BRAND */
+
+.hospitality-brand{
+padding-left:16px;
+}
+
+/* TITLE */
+
+.hospitality-brand span{
+font-size:16px;
+}
+
+/* TEXT */
+
+.hospitality-brand p{
+font-size:14px;
+
+line-height:1.8;
+}
+
+/* =====================================================
+   GALLERY
+===================================================== */
+
+.hospitality-gallery{
+position:relative;
+
+display:grid;
+
+grid-template-columns:
+1fr 1fr;
+
+gap:14px;
+
+height:auto;
+}
+
+/* =====================================================
+   MAIN IMAGE
+===================================================== */
+
+.hospitality-main{
+position:relative;
+
+left:auto;
+top:auto;
+
+transform:none;
+
+width:100%;
+height:260px;
+
+grid-column:
+span 2;
+
+border-radius:24px;
+}
+
+/* =====================================================
+   CARDS
+===================================================== */
+
+.hospitality-card{
+position:relative;
+
+top:auto;
+left:auto;
+right:auto;
+bottom:auto;
+
+transform:none !important;
+
+width:100%;
+height:180px;
+
+border-radius:20px;
+}
+
+/* IMAGE */
+
+.hospitality-main img,
+.hospitality-card img{
+
+object-fit:cover;
+
+object-position:center;
+}
+
+/* LAST CARD */
+
+.hospitality-card-5{
+
+grid-column:
+span 2;
+
+height:160px;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =====================================================
+   APE SECTION
+===================================================== */
+
+.ape-section{
+align-items:center;
+
+position:relative;
+}
+
+/* =====================================================
+   GALLERY
+===================================================== */
+
+.ape-gallery{
+position:relative;
+
+height:760px;
+}
+
+/* =====================================================
+   GLOW
+===================================================== */
+
+.ape-glow{
+position:absolute;
+
+left:50%;
+top:50%;
+
+transform:
+translate(-50%,-50%);
+
+width:500px;
+height:500px;
+
+border-radius:50%;
+
+background:
+radial-gradient(
+circle,
+rgba(200,16,46,.18),
+transparent 70%
+);
+
+filter:blur(60px);
+
+z-index:1;
+}
+
+/* =====================================================
+   MAIN
+===================================================== */
+
+.ape-main{
+position:absolute;
+
+left:50%;
+top:50%;
+
+transform:
+translate(-50%,-50%);
+
+width:210px;
+height:320px;
+
+overflow:hidden;
+
+border-radius:36px;
+
+z-index:5;
+
+background:#111;
+
+box-shadow:
+0 35px 90px rgba(0,0,0,.45);
+
+transition:.5s ease;
+}
+
+/* IMAGE */
+
+.ape-main img{
+width:100%;
+height:100%;
+
+object-fit:cover;
+
+display:block;
+
+transition:.8s ease;
+}
+
+/* HOVER */
+
+.ape-main:hover{
+
+transform:
+translate(-50%,-50%)
+translateY(-10px);
+}
+
+.ape-main:hover img{
+
+transform:scale(1.06);
+}
+
+/* =====================================================
+   FLOATS
+===================================================== */
+
+.ape-float{
+position:absolute;
+
+overflow:hidden;
+
+border-radius:28px;
+
+background:#111;
+
+z-index:3;
+
+box-shadow:
+0 20px 60px rgba(0,0,0,.35);
+
+transition:.5s ease;
+}
+
+/* IMAGE */
+
+.ape-float img{
+width:100%;
+height:100%;
+
+object-fit:cover;
+
+display:block;
+
+transition:.8s ease;
+}
+
+/* HOVER */
+
+.ape-float:hover{
+
+transform:
+translateY(-10px)
+rotate(-2deg);
+}
+
+/* IMAGE HOVER */
+
+.ape-float:hover img{
+
+transform:scale(1.08);
+}
+
+/* =====================================================
+   POSITIONS
+===================================================== */
+
+.ape-float-1{
+top:60px;
+left:20px;
+
+width:220px;
+height:300px;
+}
+
+.ape-float-2{
+bottom:60px;
+right:20px;
+
+width:240px;
+height:320px;
+}
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media(max-width:768px){
+
+.ape-gallery{
+height:620px;
+}
+
+/* MAIN */
+
+.ape-main{
+
+width:180px;
+height:220px;
+
+border-radius:24px;
+}
+
+/* FLOATS */
+
+.ape-float-1{
+
+width:130px;
+height:190px;
+
+top:30px;
+left:0;
+}
+
+.ape-float-2{
+
+width:140px;
+height:190px;
+
+bottom:30px;
+right:0;
+}
+
+/* GLOW */
+
+.ape-glow{
+
+width:300px;
+height:300px;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =====================================================
+   SHOPNAMO SECTION
+===================================================== */
+
+.shopnamo-section{
+align-items:center;
+
+position:relative;
+}
+
+/* =====================================================
+   GALLERY
+===================================================== */
+
+.shopnamo-gallery{
+position:relative;
+
+height:820px;
+}
+
+/* =====================================================
+   GLOW
+===================================================== */
+
+.shop-glow{
+position:absolute;
+
+left:50%;
+top:50%;
+
+transform:
+translate(-50%,-50%);
+
+width:500px;
+height:500px;
+
+border-radius:50%;
+
+background:
+radial-gradient(
+circle,
+rgba(255,255,255,.08),
+transparent 70%
+);
+
+filter:blur(60px);
+
+z-index:1;
+}
+
+/* =====================================================
+   MAIN HERO
+===================================================== */
+
+.shop-main-card{
+position:absolute;
+
+left:50%;
+top:50%;
+
+transform:
+translate(-50%,-50%)
+rotate(-6deg);
+
+width:240px;
+height:320px;
+
+overflow:hidden;
+
+border-radius:38px;
+
+z-index:5;
+
+background:
+rgba(255,255,255,.05);
+
+backdrop-filter:
+blur(24px);
+
+box-shadow:
+0 35px 90px rgba(0,0,0,.45);
+
+transition:.5s ease;
+}
+
+/* IMAGE */
+
+.shop-main-card img{
+width:100%;
+height:100%;
+
+object-fit:cover;
+
+display:block;
+
+transition:.8s ease;
+}
+
+/* HOVER */
+
+.shop-main-card:hover{
+
+transform:
+translate(-50%,-50%)
+rotate(-4deg)
+translateY(-10px);
+}
+
+.shop-main-card:hover img{
+
+transform:scale(1.06);
+}
+
+/* =====================================================
+   FLOATING CARDS
+===================================================== */
+
+.shop-float{
+position:absolute;
+
+overflow:hidden;
+
+border-radius:26px;
+
+background:
+rgba(255,255,255,.05);
+
+backdrop-filter:
+blur(20px);
+
+box-shadow:
+0 20px 60px rgba(0,0,0,.35);
+
+transition:.5s ease;
+
+z-index:3;
+}
+
+/* IMAGE */
+
+.shop-float img{
+width:100%;
+height:100%;
+
+object-fit:cover;
+
+display:block;
+
+transition:.8s ease;
+}
+
+/* HOVER */
+
+.shop-float:hover{
+
+transform:
+translateY(-10px)
+rotate(-2deg);
+}
+
+/* IMAGE HOVER */
+
+.shop-float:hover img{
+
+transform:scale(1.08);
+}
+
+/* =====================================================
+   POSITIONS
+===================================================== */
+
+.shop-float-1{
+top:40px;
+left:0;
+
+width:200px;
+height:260px;
+}
+
+.shop-float-2{
+top:120px;
+right:0;
+
+width:220px;
+height:300px;
+}
+
+.shop-float-3{
+bottom:120px;
+left:30px;
+
+width:220px;
+height:280px;
+}
+
+.shop-float-4{
+bottom:20px;
+right:20px;
+
+width:200px;
+height:240px;
+}
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media(max-width:768px){
+
+.shopnamo-gallery{
+height:620px;
+}
+
+/* MAIN */
+
+.shop-main-card{
+
+width:160px;
+height:220px;
+
+border-radius:24px;
+}
+
+/* FLOATS */
+
+.shop-float-1{
+width:210px;
+height:140px;
+
+top:20px;
+}
+
+.shop-float-2{
+width:120px;
+height:160px;
+
+top:60px;
+}
+
+.shop-float-3{
+width:120px;
+height:150px;
+
+bottom:80px;
+}
+
+.shop-float-4{
+width:160px;
+height:130px;
+
+bottom:10px;
+}
+
+/* GLOW */
+
+.shop-glow{
+
+width:260px;
+height:260px;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =====================================================
+   AWARDS SECTION
+===================================================== */
+
+.awards-section{
+position:relative;
+
+padding:140px 0;
+
+overflow:hidden;
+
+background:#050505;
+}
+
+/* =====================================================
+   HEADING
+===================================================== */
+
+.awards-heading{
+text-align:center;
+
+max-width:900px;
+
+margin:auto auto 90px;
+}
+
+/* TAG */
+
+.awards-tag{
+font-size:14px;
+font-weight:600;
+
+letter-spacing:6px;
+
+text-transform:uppercase;
+
+color:#C8102E;
+
+margin-bottom:24px;
+}
+
+/* TITLE */
+
+.awards-heading h2{
+font-size:clamp(56px,8vw,120px);
+
+line-height:.95;
+
+font-weight:700;
+
+letter-spacing:-4px;
+
+color:#fff;
+
+margin-bottom:34px;
+}
+
+/* SUBTITLE */
+
+.awards-subtitle{
+font-size:18px;
+
+line-height:2;
+
+color:rgba(255,255,255,.65);
+
+max-width:760px;
+
+margin:auto;
+}
+
+/* =====================================================
+   MARQUEE
+===================================================== */
+
+.awards-marquee{
+position:relative;
+
+overflow:hidden;
+
+width:100%;
+}
+
+/* TRACK */
+
+.awards-track{
+display:flex;
+
+align-items:center;
+
+gap:28px;
+
+width:max-content;
+
+animation:
+awardsMarquee 38s linear infinite;
+}
+
+/* HOVER PAUSE */
+
+.awards-marquee:hover .awards-track{
+animation-play-state:paused;
+}
+
+/* =====================================================
+   CARD
+===================================================== */
+
+.award-card{
+flex:none;
+
+flex-direction:column;  
+
+width:260px;
+height:300px;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+padding:40px;
+
+border-radius:30px;
+
+background:
+linear-gradient(
+180deg,
+rgba(255,255,255,.05),
+rgba(255,255,255,.02)
+);
+
+border:
+1px solid rgba(255,255,255,.06);
+
+backdrop-filter:
+blur(20px);
+
+box-shadow:
+0 20px 60px rgba(0,0,0,.35);
+
+transition:.5s ease;
+
+overflow:hidden;
+}
+
+/* IMAGE */
+
+.award-card img{
+width:100%;
+height:100%;
+
+object-fit:contain;
+
+filter:none;
+
+opacity:1;
+
+transition:.5s ease;
+}
+
+/* TITLE */
+
+.award-card h3{
+margin-top:24px;
+
+font-size:16px;
+font-weight:600;
+
+line-height:1.6;
+
+text-align:center;
+
+color:#fff;
+}
+
+/* HOVER */
+
+.award-card:hover{
+
+transform:
+translateY(-10px);
+
+border:
+1px solid rgba(200,16,46,.4);
+
+box-shadow:
+0 25px 80px rgba(200,16,46,.18);
+}
+
+/* IMAGE HOVER */
+
+.award-card:hover img{
+
+opacity:1;
+
+transform:scale(1.05);
+}
+
+/* =====================================================
+   ANIMATION
+===================================================== */
+
+@keyframes awardsMarquee{
+
+0%{
+transform:translateX(0);
+}
+
+100%{
+transform:translateX(-50%);
+}
+
+}
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media(max-width:768px){
+
+.awards-section{
+padding:90px 0;
+}
+
+/* HEADING */
+
+.awards-heading{
+margin-bottom:60px;
+}
+
+/* TITLE */
+
+.awards-heading h2{
+font-size:52px;
+
+letter-spacing:-2px;
+}
+
+/* SUBTITLE */
+
+.awards-subtitle{
+font-size:15px;
+
+line-height:1.9;
+
+padding:0 20px;
+}
+
+/* TRACK */
+
+.awards-track{
+gap:16px;
+
+animation:
+awardsMarquee 26s linear infinite;
+}
+
+/* CARD */
+
+.award-card{
+width:180px;
+height:200px;
+
+padding:24px;
+
+border-radius:22px;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* =====================================================
+   VENTURE LINK
+===================================================== */
+
+.venture-link{
+text-decoration:none;
+
+display:inline-block;
+}
+
+/* HOVER */
+
+.venture-link h2{
+transition:.4s ease;
+}
+
+/* HOVER EFFECT */
+
+.venture-link:hover h2{
+
+color:#C8102E;
+
+transform:
+translateX(6px);
+}
+
+/* =====================================================
+   HOSPITALITY LINKS
+===================================================== */
+
+.hospitality-link{
+text-decoration:none;
+
+display:inline-block;
+}
+
+/* TITLE */
+
+.hospitality-link span{
+transition:.35s ease;
+}
+
+/* HOVER */
+
+.hospitality-link:hover span{
+
+color:#C8102E;
+
+transform:
+translateX(4px);
+}

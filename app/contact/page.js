@@ -127,7 +127,7 @@ return(
       <div className="contact-buttons">
 
         <a
-        href="https://wa.me/918101417215?text=Hello%20Mr.%20Anirban%20Aditya,%20I%20would%20like%20to%20schedule%20a%20strategic%20meeting."
+        href="https://wa.me/919230647430?text=Hello%20Mr.%20Anirban%20Aditya,%20I%20would%20like%20to%20schedule%20a%20strategic%20meeting."
         target="_blank"
         className="primary-btn"
         >
@@ -135,7 +135,7 @@ return(
         </a>
 
         <a
-        href="https://wa.me/918101417215"
+        href="https://wa.me/919230647430"
         target="_blank"
         className="secondary-btn"
         >
