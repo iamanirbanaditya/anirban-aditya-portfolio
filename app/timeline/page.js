@@ -29,7 +29,7 @@ size:"small"
 year:"2006",
 title:"Schooling",
 text:"A milestone marking discipline and ambition.",
-image:"/images/tl3.jpeg",
+image:"/images/tl3.png",
 size:"small"
 },
 
@@ -37,7 +37,7 @@ size:"small"
 year:"2009",
 title:"Graduation",
 text:"B.Com Graduated from the University of Calcutta.",
-image:"/images/tl4.jpeg",
+image:"/images/tl4.png",
 size:"small"
 },
 
@@ -91,9 +91,9 @@ size:"small"
 
 {
 year:"2024",
-title:"ICC",
+title:"ICC Chairman",
 text:"Appointed Chair of ICC National Expert Committee on Sports.",
-image:"/images/tl11.jpeg",
+image:"/images/tl11.png",
 size:"small"
 },
 

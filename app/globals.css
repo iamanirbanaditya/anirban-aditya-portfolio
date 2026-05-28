@@ -3291,3 +3291,1354 @@ font-size:15px;
 
 color:#45ff95;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =====================================================
+   BEYOND BUSINESS PAGE
+===================================================== */
+
+.beyond-page{
+position:relative;
+
+width:100%;
+min-height:100vh;
+
+background:#050505;
+
+overflow:hidden;
+}
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.beyond-hero{
+position:relative;
+
+width:100%;
+height:100vh;
+
+display:flex;
+align-items:center;
+
+padding:0 8vw;
+
+background-image:
+url("/images/beyond-hero.png");
+
+background-size:cover;
+
+background-position:center center;
+
+background-repeat:no-repeat;
+
+overflow:hidden;
+}
+
+/* OVERLAY */
+
+.beyond-overlay{
+position:absolute;
+inset:0;
+
+background:
+linear-gradient(
+to right,
+rgba(0,0,0,.84),
+rgba(0,0,0,.35)
+);
+
+z-index:1;
+}
+
+/* CONTENT */
+
+.beyond-hero-content{
+position:relative;
+z-index:5;
+
+max-width:760px;
+}
+
+/* TAG */
+
+.beyond-tag{
+font-size:12px;
+font-weight:700;
+
+letter-spacing:.45em;
+
+color:#C8102E;
+
+margin-bottom:28px;
+}
+
+/* TITLE */
+
+.beyond-hero-content h1{
+font-size:clamp(4rem,8vw,7rem);
+
+line-height:.92;
+
+font-weight:700;
+
+letter-spacing:-4px;
+
+margin-bottom:28px;
+
+color:#fff;
+
+text-shadow:
+0 10px 30px rgba(0,0,0,.4);
+}
+
+/* LINE */
+
+.beyond-line{
+width:120px;
+height:2px;
+
+margin-bottom:32px;
+
+background:
+linear-gradient(
+90deg,
+#C8102E,
+#ff8a8a
+);
+}
+
+/* SUBTITLE */
+
+.beyond-subtitle{
+font-size:18px;
+
+line-height:1.9;
+
+max-width:620px;
+
+color:rgba(255,255,255,.76);
+
+margin-bottom:42px;
+}
+
+/* BUTTON */
+
+.beyond-btn{
+display:inline-flex;
+align-items:center;
+justify-content:center;
+
+padding:18px 34px;
+
+border-radius:999px;
+
+background:#C8102E;
+
+color:#fff;
+
+font-size:15px;
+font-weight:600;
+
+text-decoration:none;
+
+transition:.4s ease;
+}
+
+/* HOVER */
+
+.beyond-btn:hover{
+
+transform:
+translateY(-4px);
+
+background:#a50d26;
+}
+
+/* =====================================================
+   STORY SECTION
+===================================================== */
+
+.beyond-story-section{
+position:relative;
+
+display:grid;
+
+grid-template-columns:
+.8fr 1.2fr;
+
+gap:90px;
+
+align-items:center;
+
+padding:160px 8vw;
+
+background:#050505;
+
+overflow:hidden;
+}
+
+/* =====================================================
+   CONTENT
+===================================================== */
+
+.story-content{
+position:relative;
+
+z-index:3;
+
+max-width:560px;
+}
+
+/* TAG */
+
+.story-tag{
+font-size:12px;
+font-weight:700;
+
+letter-spacing:.42em;
+
+color:#C8102E;
+
+margin-bottom:24px;
+}
+
+/* TITLE */
+
+.story-content h2{
+font-size:clamp(3rem,5vw,5rem);
+
+line-height:1;
+
+letter-spacing:-3px;
+
+margin-bottom:26px;
+
+color:#fff;
+}
+
+/* LINE */
+
+.story-line{
+width:100px;
+height:2px;
+
+margin-bottom:30px;
+
+background:
+linear-gradient(
+90deg,
+#C8102E,
+transparent
+);
+}
+
+/* TEXT */
+
+.story-content p{
+font-size:17px;
+
+line-height:1.95;
+
+margin-bottom:26px;
+
+color:rgba(255,255,255,.72);
+}
+
+/* =====================================================
+   CINEMATIC MEDIA
+===================================================== */
+
+.cinematic-media-layout{
+position:relative;
+
+display:grid;
+
+grid-template-columns:
+.82fr 1.18fr;
+
+gap:28px;
+
+align-items:center;
+
+width:100%;
+}
+
+/* =====================================================
+   VIDEO
+===================================================== */
+
+.cinematic-video{
+position:relative;
+
+height:700px;
+
+border-radius:36px;
+
+overflow:hidden;
+
+background:#000;
+
+box-shadow:
+0 25px 70px rgba(0,0,0,.5);
+}
+
+.cinematic-video-overlay{
+position:absolute;
+inset:0;
+
+background:
+linear-gradient(
+180deg,
+rgba(0,0,0,.05),
+rgba(0,0,0,.28)
+);
+
+pointer-events:none;
+}
+
+.cinematic-reel{
+width:100%;
+height:100%;
+
+object-fit:cover;
+
+display:block;
+}
+
+
+/* =====================================================
+   FLOATING GALLERY
+===================================================== */
+
+.floating-gallery{
+display:grid;
+
+grid-template-columns:
+1fr 1fr;
+
+gap:18px;
+
+width:100%;
+}
+
+/* =====================================================
+   IMAGE CARD
+===================================================== */
+
+.floating-img{
+position:relative;
+
+height:240px;
+
+overflow:hidden;
+
+border-radius:28px;
+
+background:#111;
+
+box-shadow:
+0 20px 40px rgba(0,0,0,.35);
+
+transition:.45s ease;
+
+animation:
+floatingMovement 7s ease-in-out infinite;
+}
+
+/* IMAGE */
+
+.floating-img img{
+width:100%;
+height:100%;
+
+object-fit:contain;
+
+display:block;
+
+transition:.45s ease;
+
+padding:10px;
+
+background:#000;
+}
+
+/* HOVER */
+
+.floating-img:hover{
+
+transform:
+translateY(-8px)
+scale(1.02);
+}
+
+/* IMAGE HOVER */
+
+.floating-img:hover img{
+
+transform:scale(1.06);
+}
+
+/* FLOAT DELAYS */
+
+.img-1{
+animation-delay:0s;
+}
+
+.img-2{
+animation-delay:1s;
+}
+
+.img-3{
+animation-delay:2s;
+}
+
+.img-4{
+animation-delay:3s;
+}
+
+/* =====================================================
+   FLOAT ANIMATION
+===================================================== */
+
+@keyframes floatingMovement{
+
+0%{
+transform:
+translateY(0px);
+}
+
+50%{
+transform:
+translateY(-12px);
+}
+
+100%{
+transform:
+translateY(0px);
+}
+
+}
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media(max-width:768px){
+
+/* HERO */
+
+.beyond-hero{
+
+padding:110px 24px 70px;
+
+align-items:flex-start;
+
+background-position:50% center;
+}
+
+/* CONTENT */
+
+.beyond-hero-content{
+max-width:100%;
+}
+
+/* TITLE */
+
+.beyond-hero-content h1{
+
+font-size:44px;
+
+line-height:.95;
+
+letter-spacing:-2px;
+
+max-width:280px;
+
+margin-bottom:22px;
+}
+
+/* SUBTITLE */
+
+.beyond-subtitle{
+
+font-size:15px;
+
+line-height:1.8;
+
+max-width:280px;
+
+margin-bottom:34px;
+}
+
+/* BUTTON */
+
+.beyond-btn{
+
+width:100%;
+
+max-width:260px;
+
+padding:14px 18px;
+
+font-size:14px;
+
+border-radius:16px;
+}
+
+/* STORY SECTION */
+
+.beyond-story-section{
+
+grid-template-columns:1fr;
+
+gap:60px;
+
+padding:100px 24px;
+}
+
+/* TITLE */
+
+.story-content h2{
+
+font-size:42px;
+
+line-height:1.05;
+}
+
+/* TEXT */
+
+.story-content p{
+
+font-size:15px;
+
+line-height:1.85;
+}
+
+/* MEDIA */
+
+.cinematic-media-layout{
+grid-template-columns:1fr;
+
+gap:30px;
+}
+
+/* VIDEO */
+
+.cinematic-video{
+height:520px;
+
+border-radius:24px;
+}
+
+/* GALLERY */
+
+.floating-gallery{
+height:520px;
+}
+
+/* IMAGES */
+
+.img-1{
+height:150px;
+}
+
+.img-2{
+height:170px;
+}
+
+.img-3{
+height:150px;
+}
+
+.img-4{
+height:170px;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =====================================================
+   TRAVEL SECTION
+===================================================== */
+
+.travel-section{
+display:grid;
+
+grid-template-columns:
+1.15fr .85fr;
+
+gap:80px;
+
+align-items:center;
+
+padding:160px 8vw;
+
+background:#070707;
+}
+
+/* =====================================================
+   COLLAGE
+===================================================== */
+
+.travel-collage{
+display:grid;
+
+grid-template-columns:
+repeat(3,1fr);
+
+gap:18px;
+}
+
+/* IMAGE */
+
+.travel-img{
+position:relative;
+
+overflow:hidden;
+
+border-radius:28px;
+
+background:#111;
+
+box-shadow:
+0 20px 40px rgba(0,0,0,.32);
+
+transition:.45s ease;
+}
+
+/* IMAGE */
+
+.travel-img img{
+width:100%;
+height:100%;
+
+object-fit:cover;
+
+display:block;
+
+transition:.45s ease;
+}
+
+/* HOVER */
+
+.travel-img:hover{
+
+transform:
+translateY(-8px)
+scale(1.02);
+}
+
+/* IMAGE HOVER */
+
+.travel-img:hover img{
+
+transform:scale(1.05);
+}
+
+/* DIFFERENT HEIGHTS */
+
+.travel-img-1{
+height:260px;
+}
+
+.travel-img-2{
+height:360px;
+}
+
+.travel-img-3{
+height:300px;
+}
+
+.travel-img-4{
+height:380px;
+}
+
+.travel-img-5{
+height:260px;
+}
+
+.travel-img-6{
+height:340px;
+}
+
+/* =====================================================
+   CONTENT
+===================================================== */
+
+.travel-content{
+max-width:560px;
+}
+
+/* TAG */
+
+.travel-tag{
+font-size:12px;
+font-weight:700;
+
+letter-spacing:.42em;
+
+color:#C8102E;
+
+margin-bottom:24px;
+}
+
+/* TITLE */
+
+.travel-content h2{
+font-size:clamp(3rem,5vw,5rem);
+
+line-height:1;
+
+letter-spacing:-3px;
+
+margin-bottom:26px;
+
+color:#fff;
+}
+
+/* LINE */
+
+.travel-line{
+width:100px;
+height:2px;
+
+margin-bottom:30px;
+
+background:
+linear-gradient(
+90deg,
+#C8102E,
+transparent
+);
+}
+
+/* TEXT */
+
+.travel-content p{
+font-size:17px;
+
+line-height:1.95;
+
+margin-bottom:26px;
+
+color:rgba(255,255,255,.72);
+}
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media(max-width:768px){
+
+.travel-section{
+
+grid-template-columns:1fr;
+
+gap:60px;
+
+padding:100px 24px;
+}
+
+/* COLLAGE */
+
+.travel-collage{
+grid-template-columns:
+1fr 1fr;
+}
+
+/* TITLE */
+
+.travel-content h2{
+font-size:42px;
+
+line-height:1.05;
+}
+
+/* TEXT */
+
+.travel-content p{
+font-size:15px;
+
+line-height:1.85;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =====================================================
+   BOOKS SECTION
+===================================================== */
+
+.books-section{
+position:relative;
+
+width:100%;
+
+background:#050505;
+
+overflow:hidden;
+}
+
+/* =====================================================
+   BANNER
+===================================================== */
+
+.books-banner{
+position:relative;
+
+height:100vh;
+
+display:flex;
+align-items:center;
+
+padding:0 8vw;
+
+background-image:
+url("/images/books-banner.png");
+
+background-size:cover;
+
+background-position:center center;
+
+background-repeat:no-repeat;
+}
+
+/* OVERLAY */
+
+.books-banner-overlay{
+position:absolute;
+inset:0;
+
+background:
+linear-gradient(
+to right,
+rgba(0,0,0,.86),
+rgba(0,0,0,.4)
+);
+}
+
+/* CONTENT */
+
+.books-banner-content{
+position:relative;
+z-index:5;
+
+max-width:760px;
+}
+
+/* TAG */
+
+.books-tag{
+font-size:12px;
+font-weight:700;
+
+letter-spacing:.45em;
+
+color:#C8102E;
+
+margin-bottom:28px;
+}
+
+/* TITLE */
+
+.books-banner-content h2{
+font-size:clamp(4rem,8vw,7rem);
+
+line-height:.92;
+
+font-weight:700;
+
+letter-spacing:-4px;
+
+margin-bottom:28px;
+
+color:#fff;
+
+text-shadow:
+0 10px 30px rgba(0,0,0,.45);
+}
+
+/* LINE */
+
+.books-line{
+width:120px;
+height:2px;
+
+margin-bottom:32px;
+
+background:
+linear-gradient(
+90deg,
+#C8102E,
+#ff8a8a
+);
+}
+
+/* TEXT */
+
+.books-banner-content p{
+font-size:18px;
+
+line-height:1.95;
+
+max-width:620px;
+
+color:rgba(255,255,255,.76);
+}
+
+/* =====================================================
+   VIDEO SECTION
+===================================================== */
+
+.books-video-section{
+padding:140px 8vw;
+
+display:flex;
+justify-content:center;
+
+background:#050505;
+}
+
+/* VIDEO WRAPPER */
+
+.books-video-wrapper{
+position:relative;
+
+width:420px;
+height:760px;
+
+border-radius:40px;
+
+overflow:hidden;
+
+box-shadow:
+0 30px 80px rgba(0,0,0,.55);
+}
+
+/* VIDEO */
+
+.books-video{
+width:100%;
+height:100%;
+
+object-fit:cover;
+
+display:block;
+}
+
+/* OVERLAY */
+
+.books-video-overlay{
+position:absolute;
+inset:0;
+
+background:
+linear-gradient(
+180deg,
+rgba(0,0,0,.05),
+rgba(0,0,0,.28)
+);
+}
+
+/* =====================================================
+   TIMELINE
+===================================================== */
+
+.books-timeline{
+position:relative;
+
+display:flex;
+flex-direction:column;
+
+gap:160px;
+
+padding:80px 8vw 180px;
+}
+
+/* =====================================================
+   STORY
+===================================================== */
+
+.book-story{
+display:grid;
+
+grid-template-columns:
+1fr 1fr;
+
+gap:90px;
+
+align-items:center;
+}
+
+/* REVERSE */
+
+.book-story.reverse .book-story-image{
+order:2;
+}
+
+.book-story.reverse .book-story-content{
+order:1;
+}
+
+/* =====================================================
+   IMAGE
+===================================================== */
+
+.book-story-image{
+position:relative;
+
+overflow:hidden;
+
+border-radius:34px;
+
+background:#111;
+
+box-shadow:
+0 25px 60px rgba(0,0,0,.4);
+
+transition:.5s ease;
+}
+
+/* IMAGE */
+
+.book-story-image img{
+width:100%;
+height:100%;
+
+display:block;
+
+object-fit:cover;
+
+transition:.7s ease;
+}
+
+/* HOVER */
+
+.book-story-image:hover{
+
+transform:
+translateY(-10px);
+}
+
+/* IMAGE HOVER */
+
+.book-story-image:hover img{
+
+transform:scale(1.06);
+}
+
+/* DIFFERENT HEIGHTS */
+
+.book-story:nth-child(1) .book-story-image{
+height:620px;
+}
+
+.book-story:nth-child(2) .book-story-image{
+height:500px;
+}
+
+.book-story:nth-child(3) .book-story-image{
+height:700px;
+}
+
+.book-story:nth-child(4) .book-story-image{
+height:540px;
+}
+
+.book-story:nth-child(5) .book-story-image{
+height:640px;
+}
+
+.book-story:nth-child(6) .book-story-image{
+height:560px;
+}
+
+.book-story:nth-child(7) .book-story-image{
+height:680px;
+}
+
+.book-story:nth-child(8) .book-story-image{
+height:520px;
+}
+
+.book-story:nth-child(9) .book-story-image{
+height:640px;
+}
+
+.book-story:nth-child(10) .book-story-image{
+height:560px;
+}
+
+/* =====================================================
+   CONTENT
+===================================================== */
+
+.book-story-content{
+max-width:560px;
+}
+
+/* NUMBER */
+
+.book-number{
+display:block;
+
+font-size:13px;
+font-weight:700;
+
+letter-spacing:.4em;
+
+margin-bottom:24px;
+
+color:#C8102E;
+}
+
+/* TITLE */
+
+.book-story-content h3{
+font-size:clamp(2.5rem,4vw,4.2rem);
+
+line-height:1;
+
+letter-spacing:-3px;
+
+margin-bottom:16px;
+
+color:#fff;
+}
+
+/* AUTHOR */
+
+.book-author{
+display:block;
+
+margin-bottom:28px;
+
+font-size:13px;
+font-weight:600;
+
+letter-spacing:.18em;
+
+text-transform:uppercase;
+
+color:#C8102E;
+}
+
+/* TEXT */
+
+.book-story-content p{
+font-size:17px;
+
+line-height:2;
+
+color:rgba(255,255,255,.72);
+}
+
+/* =====================================================
+   FLOATING GLOW
+===================================================== */
+
+.book-story::before{
+content:"";
+
+position:absolute;
+
+width:300px;
+height:300px;
+
+background:
+radial-gradient(
+circle,
+rgba(200,16,46,.12),
+transparent 70%
+);
+
+filter:blur(40px);
+
+z-index:0;
+}
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media(max-width:768px){
+
+/* BANNER */
+
+.books-banner{
+
+height:100svh;
+
+padding:120px 24px 80px;
+
+align-items:flex-start;
+
+background-position:65% center;
+}
+
+/* CONTENT */
+
+.books-banner-content{
+max-width:100%;
+}
+
+/* TITLE */
+
+.books-banner-content h2{
+
+font-size:48px;
+
+line-height:.95;
+
+letter-spacing:-2px;
+
+margin-bottom:24px;
+}
+
+/* TEXT */
+
+.books-banner-content p{
+
+font-size:15px;
+
+line-height:1.9;
+
+max-width:300px;
+}
+
+/* VIDEO */
+
+.books-video-section{
+padding:100px 24px;
+}
+
+/* WRAPPER */
+
+.books-video-wrapper{
+
+width:100%;
+
+max-width:340px;
+
+height:620px;
+
+border-radius:28px;
+}
+
+/* TIMELINE */
+
+.books-timeline{
+
+gap:120px;
+
+padding:60px 24px 140px;
+}
+
+/* STORY */
+
+.book-story{
+
+grid-template-columns:1fr;
+
+gap:40px;
+}
+
+/* REMOVE REVERSE */
+
+.book-story.reverse .book-story-image{
+order:1;
+}
+
+.book-story.reverse .book-story-content{
+order:2;
+}
+
+/* IMAGE */
+
+.book-story-image{
+height:auto !important;
+
+border-radius:24px;
+}
+
+/* TITLE */
+
+.book-story-content h3{
+
+font-size:42px;
+
+line-height:1.05;
+}
+
+/* TEXT */
+
+.book-story-content p{
+
+font-size:15px;
+
+line-height:1.9;
+}
+
+}
